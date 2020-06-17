@@ -1,0 +1,26 @@
+<!-- 1. Consume data from this this weather API https://weatherstack.com/ use the /current endpoint
+2. Store the data you get back from the API in local storage
+3. Make the data appear on the webpage in a simple way
+4. Ensure that when the webpage is loaded you check to see if the data is in local storage before consuming data from the API
+-->
+<!-- API Access Key: 10a73bd18b71d1ccae3dff7df84e3f99 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Em's Weather App</title>
+  <script defer src="./weather.js"></script>
+</head>
+<body>
+  <h3>Weather</h3>
+
+  <form>
+  <input type="text" placeholder="City to search">
+</form>
+<p>List of retrieved weather: </p>
+<div id="weather-list">
+</div>
+</body>
+</html>
