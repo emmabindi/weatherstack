@@ -31,6 +31,8 @@ form.addEventListener("submit", (e) => {
       console.log(data)
     })
     .catch(err => console.log(err));
+  
+    city.value = " ";
 })
 
 displayWeather = (forecast) => {
