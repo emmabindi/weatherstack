@@ -28,7 +28,9 @@ form.addEventListener("submit", (e) => {
       let feelsLike = JSON.stringify(data.current.feelslike);
       let forecast = where + " " + feelsLike;
       displayWeather(forecast);
-      console.log(data)
+      localStorage.setItem("city", where);
+      localStorage.setItem("feelsLike", feelsLike)
+      // console.log(data)
     })
     .catch(err => console.log(err));
   
