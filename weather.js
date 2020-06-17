@@ -24,7 +24,9 @@ form.addEventListener("submit", (e) => {
   fetch(fullURL)
     .then(response => response.json())
     .then(data => {
-      let forecast = JSON.stringify(data);
+      let where = JSON.stringify(data.location.name);
+      let feelsLike = JSON.stringify(data.current.feelslike);
+      let forecast = where + " " + feelsLike;
       displayWeather(forecast);
       console.log(data)
     })
